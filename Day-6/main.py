@@ -1,4 +1,5 @@
 from fastapi import FastAPI
+from exceptions import (PincodeNotFoundError, pincode_not_found_handler)
 
 app = FastAPI(
     title = "Pincode Lookup API",

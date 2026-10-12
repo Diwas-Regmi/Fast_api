@@ -1,6 +1,7 @@
 from fastapi.responses import JSONResponse
 from fastapi import Request
 
+
 class PincodeNotFoundError(Exception):
     def __init__(self, pincode : str):
         self.pincode = pincode
